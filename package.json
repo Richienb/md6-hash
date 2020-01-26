@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "md6-hash",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Create an MD6 hash of a string.",
+    "repository": "https://github.com/Richienb/md6-hash.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -17,11 +17,17 @@
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "hash",
+        "md6",
+        "crypto"
+    ],
+    "dependencies": {
+        "ow": "^0.15.1"
+    },
     "devDependencies": {
         "ava": "^3.0.0",
-        "eslint-config-richienb": "^0.2.3",
+        "eslint-config-richienb": "^0.3.0",
         "xo": "^0.25.3"
     },
     "resolutions": {

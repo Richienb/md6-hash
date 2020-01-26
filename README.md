@@ -1,41 +1,55 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# MD6 Hash [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/md6-hash/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/md6-hash)
 
-My awesome module.
+Create an MD6 hash of a string.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/md6-hash.png)](https://npmjs.com/package/md6-hash)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install md6-hash
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const md6 = require("md6-hash");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+md6("a");
+//=> '2b0a697a081c21269514640aab4d74ffafeb3c0212df68ce92922087c69b0a77'
 ```
 
 ## API
 
-### theModule(input, options?)
+### md6Hash(input, options?)
 
 #### input
 
 Type: `string`
 
-Lorem ipsum.
+The string to hash.
 
 #### options
 
 Type: `object`
 
-##### postfix
+##### size
+
+Type: `number`\
+Default: `256`
+
+Byte size of the raw hash.
+
+##### key
 
 Type: `string`\
-Default: `rainbows`
+Default: `""`
 
-Lorem ipsum.
+The hash seed.
+
+##### levels
+
+Type: `number`\
+Default: `64`
+
+Hashing levels.
