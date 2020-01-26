@@ -1,6 +1,6 @@
 {
     "name": "md6-hash",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Create an MD6 hash of a string.",
     "repository": "https://github.com/Richienb/md6-hash.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
