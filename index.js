@@ -258,9 +258,9 @@ function preHash(data, size, key, levels) {
 
 module.exports = (input, { size = 256, key = "", levels = 64 } = {}) => {
 	ow(input, ow.string)
-	ow(size, ow.number)
+	ow(size, ow.number.integer.positive)
 	ow(key, ow.string)
-	ow(levels, ow.number)
+	ow(levels, ow.number.integer.positive)
 
 	const hash = preHash(input, size, key, levels)
 
