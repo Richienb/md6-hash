@@ -23,7 +23,7 @@
         "crypto"
     ],
     "dependencies": {
-        "ow": "^0.15.1"
+        "ow": "^0.17.0"
     },
     "devDependencies": {
         "ava": "^3.0.0",
